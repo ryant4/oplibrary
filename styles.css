@@ -99,6 +99,7 @@ h1 {
 
 .book-card {
     height: 62px;
+    width: clamp(500px, 80%, 900px);
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
@@ -155,4 +156,64 @@ select {
     background-color: gainsboro;
     height: 25px;
     border-radius: 5px;
+}
+
+
+
+/* OVERLAY */
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color:#00425a69;
+
+}
+
+#modal {
+    width: 300px;
+    height: 360px;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#close-modal-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: fit-content;
+}
+
+form {
+    display: grid;
+    gap: 5px;
+    padding: 15px;
+    grid-template-rows: min-content;
+    justify-items: center;
+
+}
+
+form > label {
+    margin-top: 10px;
+}
+form > button {
+    justify-self: center;
+}
+
+#add {
+    margin-top: 10px;
 }

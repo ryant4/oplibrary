@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,25 +13,29 @@
         <h1>Library</h1>
         <button id="add-button">Add a book</button>
     </div>
-    <div id="book-list">
-        <!-- <div class="book-card">
-            <div class="title">To Kill a Mockingbird</div>
-            <div class="delete-buttons">
-                <button>X</button>
-            </div>
-            <div class="author">Harper Lee</div>
-            <div class="pages">184 pages</div>
-            <div class="read-status">
-                <select name="read-status" id="read-unread">
-                    <option value="unread">Unread</option>
-                    <option value="read">Read</option>
-                </select>
-            </div>
-             -->
-        </div>
+    <div id="book-list"></div>
+</div>
+
+<!-- This is for the add book overlay form -->
+<div id="overlay">
+    <div id="modal">
+        <form id="new-book-form" action="" method="post">
+            <label for="title">Book Title</label>
+            <input type="text" name="new-book-info" id="title">
+            <label for="author">Author</label>
+            <input type="text" name="new-book-info" id="author">
+            <label for="pages">Pages</label>
+            <input type="number" name="new-book-info" id="pages">
+            <label for="read-status">Check if book is read:</label>
+            <input type="checkbox" name="new-book-info" id="read-status">
+            <button id="add" type="submit">Add Book</button>
+            <button type="reset">Clear</button>
+        </form>
+        <button id="close-modal-btn">X</button>
     </div>
 </div>
 
 <script src="scripts.js"></script>
+
 </body>
 </html>

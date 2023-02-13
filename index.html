@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="page-container">
-    <div class="header">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="header">
         <h1>Library</h1>
         <button id="add-button">Add a book</button>
+      </div>
+      <div id="book-list"></div>
     </div>
-    <div id="book-list"></div>
-</div>
 
-<!-- This is for the add book overlay form -->
-<div id="overlay">
-    <div id="modal">
+    <!-- This is for the add book overlay form -->
+    <div id="overlay">
+      <div id="modal">
         <form id="new-book-form" action="" method="post">
-            <label for="title">Book Title</label>
-            <input type="text" name="new-book-info" id="title">
-            <label for="author">Author</label>
-            <input type="text" name="new-book-info" id="author">
-            <label for="pages">Pages</label>
-            <input type="number" name="new-book-info" id="pages">
-            <label for="read-status">Check if book is read:</label>
-            <input type="checkbox" name="new-book-info" id="read-status">
-            <button id="add" type="submit">Add Book</button>
-            <button type="reset">Clear</button>
+          <label for="title">Book Title</label>
+          <input type="text" name="new-book-info" id="title" />
+          <label for="author">Author</label>
+          <input type="text" name="new-book-info" id="author" />
+          <label for="pages">Pages</label>
+          <input type="number" name="new-book-info" id="pages" />
+          <label for="read-status">Check if book is read:</label>
+          <input type="checkbox" name="new-book-info" id="read-status" />
+          <button id="add" type="submit">Add Book</button>
+          <button type="reset">Clear</button>
         </form>
         <button id="close-modal-btn">X</button>
+      </div>
     </div>
-</div>
 
-<script src="scripts.js"></script>
-
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
